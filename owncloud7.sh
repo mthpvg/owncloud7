@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#owncloud.nianubo.eu
 domain='sub.domain.tld'
 
 rootDirectory='/opt/owncloud'
