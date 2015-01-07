@@ -15,7 +15,7 @@ server {
 	ssl_certificate /etc/ssl/nginx/<sub.domain.tld>.crt;
 	ssl_certificate_key /etc/ssl/nginx/<sub.domain.tld>.key;
 
-	root <root/directory>;
+	root <rootDirectory>;
 
 	client_max_body_size 10G;
 	fastcgi_buffers 64 4K;

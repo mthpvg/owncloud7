@@ -22,7 +22,7 @@ sudo rm -rf owncloud-latest.tar.bz2
 sudo chown -R www-data:www-data /opt/owncloud
 sudo mv nginxConfigFile $domain
 sudo sed -i "s/<sub.domain.tld>/$domain/g" $domain
-sudo sed -i "s/<root/directory>/$rootDirectory/g" $domain
+sudo sed -i "s/<rootDirectory>/$rootDirectory/g" $domain
 sudo mv $domain /etc/nginx/sites-available
 
 
