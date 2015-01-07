@@ -7,12 +7,14 @@ rootDirectory='/opt/owncloud'
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get install -y mariadb-server
-mysql_secure_installation
+echo "\n-mariaDB"
+echo "After entering your mariaDB's root password type the following commands:"
+echo "	CREATE DATABASE <DATABASE_NAME>;"
+echo "	GRANT ALL ON <DATABASE_NAME>.* to <DATABASE_USER>@localhost identified by '<USER_PASSWORD>';"
+echo "FLUSH PRIVILEGES;"
+echo "exit;"
+echo "enter your mariaDB's root password:"
 mysql -u root -p
-#	CREATE DATABASE <DATABASE_NAME>;
-#	GRANT ALL ON <DATABASE_NAME>.* to <DATABASE_USER>@localhost identified by '<USER_PASSWORD>';
-#	FLUSH PRIVILEGES;
-#	exit;
 sudo apt-get install -y nginx php5-fpm php5-common php5-cli php5-json php5-mysql php5-curl php5-intl php5-mcrypt php5-memcache php5-gd
 sudo cp nginxConfigFile /opt
 cd /opt/
