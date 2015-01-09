@@ -5,17 +5,22 @@
 * Ubuntu 14.04 LTS
 * MariaDB 5.5
 * Nginx 1.6
+* ownCloud 7
+
+* Apache 2.4
+* MySQL 5.6
+
 
 ## SSL
 
-* self-signed SSL with OpenSSL 1.0
-* 
-
+* self-signed SSL certificate with OpenSSL 1.0
+* Signed SSL certificate
 
 
 ## git
 
 git clone https://github.com/mthpvg/owncloud7.git
+git clone git@github.com:mthpvg/owncloud7.git
 
 ## openstack
 
