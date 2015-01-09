@@ -9,6 +9,7 @@
 
 * Apache 2.4
 * MySQL 5.6
+* lighttpd 1.4
 
 
 ## SSL
